@@ -107,6 +107,7 @@
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
 
+    <!-- Ignore window secure -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             android:icon="@drawable/ic_unlock_alert"
@@ -114,6 +115,16 @@
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
 
+    <PreferenceCategory
+        android:key="miscellaneous_developer_options_category"
+        android:title="@string/miscellaneous_developer_options_category">
+            <!-- Allow application downgrade -->
+            <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/miscellaneous_app_downgrade_title"
+            android:summary="@string/miscellaneous_app_downgrade_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 
     <!-- Hide developer option -->
     <Preference
