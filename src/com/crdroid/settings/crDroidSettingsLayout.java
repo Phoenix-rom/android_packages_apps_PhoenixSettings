@@ -41,7 +41,6 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.crdroid.settings.fragments.About;
 import com.crdroid.settings.fragments.Buttons;
 import com.crdroid.settings.fragments.LockScreen;
 import com.crdroid.settings.fragments.Miscellaneous;
@@ -173,7 +172,6 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
             frags[6] = new Notifications();
             frags[7] = new Sound();
             frags[8] = new Miscellaneous();
-            frags[9] = new About();
         }
 
         @Override
@@ -204,7 +202,6 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
             getString(R.string.notifications_title),
             getString(R.string.sound_title),
             getString(R.string.misc_title),
-            getString(R.string.about_crdroid)
         };
         return titleString;
     }
